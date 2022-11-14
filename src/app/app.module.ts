@@ -7,6 +7,9 @@ import { FooterComponent } from './footer/footer.component';
 import { HeaderComponent } from './header/header.component';
 import { AboutusComponent } from './components/aboutus/aboutus.component';
 import { PrivacypolicyComponent } from './components/privacypolicy/privacypolicy.component';
+import { CoMarketingComponent } from './components/co-marketing/co-marketing.component';
+import { PartnersComponent } from './components/partners/partners.component';
+
 
 @NgModule({
   declarations: [
@@ -14,7 +17,10 @@ import { PrivacypolicyComponent } from './components/privacypolicy/privacypolicy
     FooterComponent,
     HeaderComponent,
     AboutusComponent,
-    PrivacypolicyComponent
+    PrivacypolicyComponent,
+    CoMarketingComponent,
+    PartnersComponent,
+  
   ],
   imports: [
     BrowserModule,
