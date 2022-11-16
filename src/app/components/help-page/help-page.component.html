@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="top">
+            <div class="image-container">
+                <img class="image" src="./assets/r_bg5.png" alt="r_bg5">
+                <div class="img-text-overlay"></div>
+                <div class="text"><h1>Hi! How can we help?</h1></div>   
+            </div>
+        </div>
+        <div class="bottom">
+            <div class="faq-title">Frequently Asked Questions</div>
+            <div class="faqs">
+                <div class="question" id="q1" (click)="question('q1')" [class.question::after]="id === 'q1'" >
+                    <span>[Advertise Services] How can I include my shops onto
+                        BuiltShops?</span></div>
+                <div class="answer" *ngIf="id === 'q1'" [class.answer]>
+                    <span>
+                        <p>You can contact our team to scan your physical shops and list it on BuiltShops via these 3
+                            channels:</p>
+                        <ol>
+                            <li>Fill up the contact information <a href="support/advertise">here</a>.</li>
+                            <li>Call us at +65 9017 9347 or WhatsApp us from Monday to Sunday, 8.00AM to 10:00PM,
+                                including
+                                Public Holidays.</li>
+                            <li> Drop us an email to <a href="mailto:support@builtshops.com">support@builtshops.com</a>.
+                            </li>
+                        </ol>
+
+                    </span>
+                </div>
+            </div>
+            <div class="faqs">
+                <div class="question" id="q2" (click)="question('q2')" [class.question::after]="id === 'q2'">
+                    <span>[Feedbacks] How can I contact BuiltShops Customer Service or
+                        Live Chat?</span></div>
+                <div class="answer" *ngIf="id === 'q2'" [class.answer]>
+                    <span>
+                        <p>Ans: You can contact BuiltShops via these 3 channels:</p>
+                        <ol>
+                            <li>Call us at +65 9017 9347 or <a href="https://wa.me/6597110778">WhatsApp</a> us from
+                                Monday to Sunday, 8.00AM to 10:00PM, including
+                                Public Holidays.</li>
+                            <li>Drop us an email to <a href="mailto:support@builtshops.com">support@builtshops.com</a>.
+                            </li>
+                        </ol>
+                    </span>
+                </div>
+            </div>
+            <div class="faqs">
+                <div class="question" id="q3" (click)="question('q3')" [class.question::after]="id === 'q3'">
+                    <span>[Scan Services] How do I start selling on BuiltShops?
+                    </span>
+                </div>
+                <div class="answer" *ngIf="id === 'q3'" [class.answer]>
+                    <span>
+                        <p>First, you need to have your shop account listed onto BuiltShops. You can contact our team to
+                            scan your physical shops and list it on BuiltShops via these 3 channels:</p>
+                        <ol>
+                            <li>Fill up the contact information <a href="support/advertise">here</a>.</li>
+                            <li>Call us at +65 9017 9347 or <a href="https://wa.me/6597110778">WhatsApp</a> us from
+                                Monday to Sunday, 8.00AM to 10:00PM, including
+                                Public Holidays.</li>
+                            <li>Drop us an email to <a href="mailto:support@builtshops.com">support@builtshops.com</a>.
+                            </li>
+                        </ol>
+                        <p>Once your virtual store is created, you will be given a business account to manage your
+                            inventory products and e-commerce functions. Training will be provided once your account is
+                            set
+                            up.</p>
+
+                    </span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+</body>
+
+</html>
